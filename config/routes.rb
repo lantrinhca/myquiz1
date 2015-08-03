@@ -1,5 +1,8 @@
 Myquiz1::Application.routes.draw do
-  root 'mypages#index'
+  root 'expenses#index'
+
+  resources :expenses
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
