@@ -10,7 +10,8 @@ gem 'bootstrap-sass', '~> 3.3.4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'simple_form'
-gem 'bootstrap-datepicker-rails'
+gem 'simple-form-datepicker'
+gem 'jquery-ui-rails', '~> 4.2.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

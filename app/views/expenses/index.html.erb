@@ -1,31 +1,27 @@
-<h1>Expense Tracker</h1>
-
 <div class="container">
-	<p><%= date_field("dop", "date_of_purchase", :value => Time.now.strftime('%Y-%m-%d') ) %>
-			<span class="glyphicon glyphicon-calendar"></span>
-		</p>
+  <h2>Expense Table</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Date of Purchase</th>
+        <th>Location</th>
+        <th>Category</th>
+        <th>Amount</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
 
 
-	<div class="container">
-	    <div class="row">
-	        <div class='col-sm-6'>
-	            <div class="form-group">
-	                <div class='input-group date' id='datetimepicker1'>
-	                    <input type='text' class="form-control" />
-	                    <span class="input-group-addon">
-	                        <span class="glyphicon glyphicon-calendar"></span>
-	                    </span>
-	                </div>
-	            </div>
-	        </div>
-	        <script type="text/javascript">
-	            $(function () {
-	                $('#datetimepicker1').datetimepicker();
-	            });
-	        </script>
-	    </div>
-	</div>
-
-	<input type="text" data-provide='datepicker' >
-
+    <tbody>
+    	<% @expenses.each do |expense| %>
+    		<tr>
+					<td><%= expense.dop.strftime("%Y/%b/%d") %></td>
+					<td><%= expense.location %></td>
+					<td><%= expense.category %></td>
+					<td><%= number_to_currency( expense.amount) %></td>
+					<td><%= expense.comment %></td>
+    		</tr>
+			<% end %>
+    </tbody>
+  </table>
 </div>

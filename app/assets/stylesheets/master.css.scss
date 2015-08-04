@@ -1,5 +1,20 @@
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
 body {
-	margin-top: 100px;
+ // margin-top: 60px;
+  padding-top: 100px;
+	// background: url('/assets/crossword.png');
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
 h1 {
@@ -10,5 +25,18 @@ h1 {
 
 p {
 	margin: 100px;
+}
+
+.navbar {
+	background-color: #800040;
+  // font-size: 20px;
+	}
+
+.navbar-brand {
+  vertical-align: middle;
+  text-align: center;
+  float: none;
+
+
 }
 

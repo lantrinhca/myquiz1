@@ -1,0 +1,13 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+	<h1>Enter Your Expense</h1>
+		<%= simple_form_for @expense do |f| %>
+			<%= f.input :dop, :as => 'string', :label => 'Date of Purchase', input_html: { class: 'datepicker' } %><br>
+	    <!-- <%= f.input :dop, :as => 'datepicker', :label => 'Date of Purchase' %><br>  -->
+	    <%= f.input :location %><br>
+	    <%= f.input :category %><br>
+	    <%= f.input :amount %><br>
+	    <%= f.input :comment %><br>
+	    <%= f.submit 'Submit', :class  => 'btn btn-primary' %>
+	  <% end %>
+</div>
+

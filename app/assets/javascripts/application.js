@@ -12,7 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-sprockets
-//= require bootstrap-datepicker
+//= require jquery.ui.all
+//= require jquery.ui.datepicker
 //= require turbolinks
+//= require bootstrap-sprockets
+//= require bootstrap
+//= require bootstrap.js
 //= require_tree .
+$(document).on("page:load ready", function(){
+    $("input.datepicker").datepicker({ dateFormat: 'yy-mm-dd'});
+});
